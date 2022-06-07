@@ -1,0 +1,320 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #222;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+#container {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header .header-top {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .header-top .login {
+  color: #787c7b;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 16px;
+}
+#header .header-top .login:hover {
+  color: #222;
+}
+#header .header-top .signup {
+  height: 32px;
+  line-height: 32px;
+  display: inline-block;
+  color: #fff;
+  background-color: #1caf89;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 16px;
+  margin-left: 16px;
+  border-radius: 4px;
+}
+#header .header-top .signup:hover {
+  background-color: #228d74;
+}
+#navi {
+  padding: 0 8px;
+  border-bottom: 1px solid #f2f2f2;
+}
+#navi ul {
+  display: flex;
+  align-items: center;
+}
+#navi li {
+  height: 48px;
+  line-height: 48px;
+  border-bottom: solid 2px #fff;
+  flex-shrink: 0;
+}
+#navi li:hover {
+  border-bottom: solid 2px #000;
+}
+#navi a {
+  display: block;
+  color: #787c7b;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 16px;
+}
+#navi a:hover {
+  color: #222;
+}
+
+/*-------------------------------------------
+メイン
+-------------------------------------------*/
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 24px 0;
+  margin-bottom: 16px;
+  border-bottom: solid 1px rgba(0,0,0,.05)
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+article {
+  flex: 1;
+  width: 100%;
+  max-width: 540px;
+  min-width: 272px;
+  padding: 12px;
+  margin-bottom: 36px;
+}
+article:hover {
+  background-color: #f7f9f9;
+}
+article .title {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: .04em;
+  margin: 16px 0 8px 0;
+}
+article .text {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  text-align: justify;
+}
+article .like {
+  color: #ea3f60;
+  font-size: 14px;
+}
+article .like:before {
+  content: "\f004";
+  font-family: "Font Awesome 5 Free";
+  margin-right: 4px;
+}
+article .name-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #787c7b;
+}
+article .name {
+  font-size: 14px;
+}
+article .name-like {
+  font-size: 20px;
+}
+article .name-like:after {
+  content: "\f004";
+  font-family: "Font Awesome 5 Free";
+}
+
+/*-------------------------------------------
+サイドバー
+-------------------------------------------*/
+#sidebar {
+  width: 274px;
+  flex-shrink: 0;
+  margin-left: 40px;
+}
+#sidebar .summary {
+  display: block;
+  background-color: #fff;
+  border: solid 1px #e6e6e6;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  position: relative;
+}
+#sidebar .summary::before {
+  content: "";
+  background-color: #fff;
+  border: solid 1px #e6e6e6;
+  border-radius: 4px;
+  position: absolute;
+  top: 2px;
+  right: -4px;
+  bottom: -4px;
+  left: 2px;
+  z-index: -1;
+}
+#sidebar .summary::after {
+  content: "";
+  background-color: #fff;
+  border: solid 1px #e6e6e6;
+  border-radius: 4px;
+  position: absolute;
+  top: 6px;
+  right: -7px;
+  bottom: -7px;
+  left: 6px;
+  z-index: -2;
+}
+#sidebar .summary img {
+  vertical-align: bottom;
+}
+#sidebar .summary .item {
+  padding: 16px;
+}
+#sidebar .summary .item .title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+#sidebar .summary .item .title::after {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  color: #6edbc6;
+  margin-left: 4px;
+}
+#sidebar .summary .item .count {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+#sidebar .summary .item .count::before {
+  content: "\f518";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 4px;
+}
+#sidebar .summary .item .text {
+  color: #787c7b;
+  font-size: 12px;
+}
+#sidebar .btn {
+  display: inline-block;
+  border-radius: 4px;
+  color: #222;
+  border: solid 1px #e6e6e6;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 16px;
+  margin-bottom: 40px;
+}
+#sidebar .btn:hover {
+  border: solid 1px #a8abb1;
+}
+#sidebar .archive {
+  margin-bottom: 40px;
+}
+#sidebar .archive h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+#sidebar .archive .calendar-area {
+  border: solid 1px #f2f2f2;
+  border-radius: 4px;
+  padding: 16px;
+}
+#sidebar .archive .calendar {
+  border-bottom: solid 1px #f2f2f2;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+#sidebar .archive .calendar:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#sidebar .archive .calendar .year {
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+#sidebar .archive .calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#sidebar .archive .calendar li {
+  width: 25%;
+  padding: 4px;
+  font-size: 14px;
+}
+#sidebar .archive .calendar li a {
+  display: block;
+  text-align: center;
+}
+#sidebar .link {
+  display: flex;
+}
+#sidebar .link li {
+  margin-right: 8px;
+}
+#sidebar .link li:last-child {
+  margin-right: 0;
+}
+#sidebar .link a {
+  color: #787c7b;
+  font-size: 12px;
+}
+#sidebar .link a:hover {
+  color: #222;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 768px) {
+  #container {
+    flex-direction: column;
+  }
+
+  /*-------------------------------------------
+  ヘッダー
+  -------------------------------------------*/
+  #navi ul {
+    overflow-x: scroll;
+  }
+
+  /*-------------------------------------------
+  サイドバー
+  -------------------------------------------*/
+  #sidebar {
+    width: 100%;
+    margin-left: 0;
+  }
+}
