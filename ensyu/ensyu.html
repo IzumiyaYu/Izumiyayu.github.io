@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Tweet</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="tweet.css">
+</head>
+<body onload="Init()">
+
+<div class="content">
+  <div class="col-md-12 menu">
+    <button type="button" class="btn btn-info" style="float: left" onclick="showTweet()">ALL</button>
+  </div>
+
+  <div class="col-md-6 main" style="clear: left"></div>
+
+</div>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script
+    src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+<script src="https://morimorihoge.github.io/teu2021f/tweets.js">
+    // JavaScript中で使うための配列
+    let tweets = [
+        { name: "三郎BOT", message: "21時でござる", tweetedAt: "2019-11-01 21:00:00", avatar: "https://morimorihoge.github.io/teu2019f/images/omocha_robot.png" },
+        { name: "次郎", message: "悲しいので寝ます", tweetedAt: "2019-11-01 20:14:44", avatar: "https://morimorihoge.github.io/teu2019f/images/idol_fan_penlight_sougankyou.png" },
+        { name: "次郎", message: "33-4・・・・・", tweetedAt: "2019-11-01 20:13:03", avatar: "https://morimorihoge.github.io/teu2019f/images/idol_fan_penlight_sougankyou.png" },
+        { name: "太郎", message: "満腹度が回復した", tweetedAt: "2019-11-01 20:05:38", avatar: "https://morimorihoge.github.io/teu2019f/images/mukiryoku_man.png" },
+        { name: "三郎BOT", message: "20時でござる", tweetedAt: "2019-11-01 20:00:00", avatar: "https://morimorihoge.github.io/teu2019f/images/omocha_robot.png"  },
+        { name: "太郎", message: "もぐもぐ・・・", tweetedAt: "2019-11-01 19:50:22", avatar: "https://morimorihoge.github.io/teu2019f/images/mukiryoku_man.png" },
+        { name: "太郎", message: "ごはんつくった！", tweetedAt: "2019-11-01 19:48:01", avatar: "https://morimorihoge.github.io/teu2019f/images/mukiryoku_man.png" },
+        { name: "太郎", message: "お腹空いたなあ....", tweetedAt: "2019-11-01 19:30:59", avatar: "https://morimorihoge.github.io/teu2019f/images/mukiryoku_man.png" },
+        { name: "太郎", message: "お腹空いたなあ", tweetedAt: "2019-11-01 19:08:01", avatar: "https://morimorihoge.github.io/teu2019f/images/mukiryoku_man.png" },
+        { name: "次郎", message: "久々にやきうやったるで！パワプロやけどな！", tweetedAt: "2019-11-01 19:04:12", avatar: "https://morimorihoge.github.io/teu2019f/images/idol_fan_penlight_sougankyou.png" },
+        { name: "三郎BOT", message: "19時でござる", tweetedAt: "2019-11-01 19:00:00", avatar: "https://morimorihoge.github.io/teu2019f/images/omocha_robot.png"  }
+    ];
+</script>
+<script src="tweet.js">
+</script>
+</body>
+</html>
