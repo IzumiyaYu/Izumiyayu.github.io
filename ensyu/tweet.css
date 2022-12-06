@@ -1,0 +1,52 @@
+body{
+  background: #e0e0e0;
+}
+
+
+.tweet{
+//min-height: 100spx;
+  height: auto;
+  background-color: #d8bfd8;
+  border: 2px solid #db7093;
+}
+
+.main{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.tweet_icon{
+  position: relative;
+  left: 20px;
+  border-radius: 0%;
+  height: 60px;
+  width: 60px;
+  border: solid 2px #ba55d3;
+}
+
+.time{
+  margin-left: 20px;
+}
+
+
+.message{
+  position: relative;
+  left: 100px;
+  top: -65px;
+}
+
+.name{
+  position: relative;
+  left: 100px;
+  top: -50px;
+}
+
+.btn {
+  margin: 3px;
+  color:#ffffff;
+}
+
+.btn-info {
+  margin-left:-5px;
+}
