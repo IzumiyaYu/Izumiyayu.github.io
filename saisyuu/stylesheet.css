@@ -53,10 +53,10 @@ header .tel a {
   color: #6c757d !important;
 }
 html{
-  scroll-behavior: smooth; // スムーススクロール
+  scroll-behavior: smooth;
 }
 
-/*tabの形状*/
+
 .tab{
   display: flex;
   flex-wrap: wrap;
@@ -67,24 +67,24 @@ html{
   margin:0 2px;
   padding:10px 20px;
 }
-/*liにactiveクラスがついた時の形状*/
+
 .tab li.active a{
   background:#fff;
 }
 
 
-/*エリアの表示非表示と形状*/
+
 .area {
-  display: none;/*はじめは非表示*/
-  opacity: 0;/*透過0*/
+  display: none;
+  opacity: 0;
   background: #fff;
   padding:50px 20px;
 }
 
-/*areaにis-activeというクラスがついた時の形状*/
+
 .area.is-active {
-  display: block;/*表示*/
-  animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+  display: block;
+  animation-name: displayAnime;
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
@@ -101,7 +101,7 @@ html{
 
 
 
-/*========= レイアウトのためのCSS ===============*/
+
 
 body{
   background:#eee;
@@ -139,7 +139,7 @@ a{
   padding:20px;
 }
 
-/*日付*/
+
 .slider span {
   display:inline-block;
   font-size:0.8rem;
@@ -149,7 +149,7 @@ a{
 
 
 
-/*========= レイアウトのためのCSS ===============*/
+
 
 body {
   background:#ddd;
@@ -178,7 +178,7 @@ a {
 
 
 #splash {
-  /*fixedで全面に固定*/
+
   position: fixed;
   z-index: 999;
   width: 100%;
@@ -188,7 +188,7 @@ a {
   color:#fff;
 }
 
-/* Loadingバー中央配置　*/
+
 #splash_text {
   position: absolute;
   top: 50%;
@@ -199,12 +199,12 @@ a {
   color: #fff;
 }
 
-/*IE11対策用バーの線の高さ※対応しなければ削除してください*/
+
 #splash_text svg{
   height: 2px;
 }
 
-/*========= レイアウトのためのCSS ===============*/
+
 
 
 #container{
@@ -225,4 +225,5 @@ a{
 a:hover{
   text-decoration: none;
 }
+
 
